@@ -1,0 +1,64 @@
+bulk insert Bronze.Traffic 
+from 'C:\Users\user\Downloads\Traffic.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=',',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
+bulk insert [Bronze].[Region] 
+from 'C:\Users\user\OneDrive\Desktop\Region.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=';',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
+BULK INSERT Bronze.Road 
+FROM 'C:\Users\user\Downloads\Road.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=';',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
+
+ALTER TABLE Bronze.Location
+ALTER COLUMN longitude NVARCHAR(50);
+
+BULK INSERT Bronze.Location 
+FROM 'C:\Users\user\Downloads\Location.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=';',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
+
+
+
+BULK INSERT Bronze.LocalAuthority
+FROM 'C:\Users\user\Downloads\LocalAuthority.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=';',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
+ALTER TABLE Bronze.Date
+ALTER COLUMN count_date NVARCHAR(50);
+
+BULK INSERT Bronze.Date
+FROM 'C:\Users\user\Downloads\Date.csv'
+WITH (
+    FORMAT='CSV',
+    FIRSTROW=2,
+    FIELDTERMINATOR=';',
+    ROWTERMINATOR='\n',
+    TABLOCK
+);
