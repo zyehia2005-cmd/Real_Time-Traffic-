@@ -138,8 +138,10 @@ Each table is connected through **foreign keys** to form a **Star Schema** for o
 | **Osama Hegazy** | Data cleaning, SQL modeling, documentation |
 | **Mohamed Nasr Aldin** | Data cleaning and transformation |
 | **Sherif Gmal** | SQL design and documentation |
-| **Power BI Team** | Dashboard and visualization layer |
-
+| **Ahmed Salama Soliman** | Dashboard and visualization layer |
+| **Zakaria Yehia Ahmed** | Dashboard and visualization layer |
+| **Sara Hisham Ahmed Mohamed** | Dashboard and visualization layer |
+| **Yousef Ahmed Mohamed Ibrahiem** | Dashboard and visualization layer |
 ---
 
 ## 🏁 Next Steps
