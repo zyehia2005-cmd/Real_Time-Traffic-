@@ -1,0 +1,10 @@
+create database [Data wharhose pro]
+use [Data wharhose pro]
+
+
+create schema Bronze ; 
+go 
+create schema Silver ; 
+go 
+create schema Gold   ; 
+go 
