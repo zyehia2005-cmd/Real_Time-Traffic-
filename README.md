@@ -98,7 +98,7 @@ Pipeline Flow:
 
 ## 📊 Star Schema Diagram
 
-[![Star Schema](Assets/Star%20Schema.png)](Assets/Star%20Schema.png)
+[![Star Schema]()
 
 ---
 
